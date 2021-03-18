@@ -15,8 +15,8 @@ import (
 	"unsafe"
 )
 
-// #cgo !gns_static LDFLAGS: -lGameNetworkingSockets                                               -L${SRCDIR}/lib/GameNetworkingSockets/build/src
-// #cgo  gns_static,!windows LDFLAGS: -lGameNetworkingSockets_s -lssl -lcrypto -lprotobuf          -L${SRCDIR}/lib/GameNetworkingSockets/build/src
+// #cgo !gns_static LDFLAGS: -llibGameNetworkingSockets                                               -L${SRCDIR}/lib/GameNetworkingSockets/build/src
+// #cgo  gns_static,!windows LDFLAGS: -llibGameNetworkingSockets_s -lssl -lcrypto -lprotobuf          -L${SRCDIR}/lib/GameNetworkingSockets/build/src
 // #cgo  gns_static,windows  LDFLAGS: -lGameNetworkingSockets_s -lssl -lcrypto -lprotobuf -lws2_32 -L${SRCDIR}/lib/GameNetworkingSockets/build/src
 /*
 	#include <gns.h>
