@@ -82,3 +82,5 @@ func Example() {
 	// Output: Compare(in, out) == true
 }
 ```
+
+just run the actions
