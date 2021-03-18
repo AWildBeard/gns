@@ -3,6 +3,8 @@ name: test
 jobs:
   test-ubuntu:
     runs-on: ubuntu-latest
+    env:
+      ACTIONS_ALLOW_UNSECURE_COMMANDS: true
     steps:
 
     - name: Checkout code
